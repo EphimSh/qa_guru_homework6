@@ -29,13 +29,19 @@ public class Main {
         System.out.println("long overflow : " + longVar + Long.MAX_VALUE);
         System.out.println("float overflow : " + (floatVar - Float.MAX_VALUE));
         System.out.println("double overflow : " + doubleVar + Double.MAX_VALUE);
-        System.out.println("char overflow : " + ((int)charVar + Character.MAX_VALUE));
+        System.out.println("char overflow : " + ((int) charVar + Character.MAX_VALUE));
         System.out.println();
 
         System.out.println("quick math:");
         System.out.println("2 plus 2 is greater than 5 : " + ((2 + 2) > 5));
         System.out.println("2 plus 2 is lower than 5 and greater than 3: " + ((2 + 2) < 5 && (2 + 2) > 3));
-        System.out.println( ((2 + 2) == 4)? "yes, 2 plus 2 is 4" : "something went wrong");
+        System.out.println(((2 + 2) == 4) ? "yes, 2 plus 2 is 4" : "something went wrong");
+        System.out.println();
+
+        if (intVar > 10 || intVar % 2 != 0)
+            System.out.println("yep, it's greater than 10 or it could be an odd number");
+
+
         System.out.println();
 
         System.out.println("what if");
@@ -55,12 +61,14 @@ public class Main {
 
 
     }
-    public static String oddOrEven(int num){
-        if(num % 2 ==0){
+
+    public static String oddOrEven(int num) {
+        if (num % 2 == 0) {
             return "even";
         } else {
             return "odd";
         }
     }
+
 
 }
